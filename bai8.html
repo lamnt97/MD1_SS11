@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = Number(prompt("Nhập vào số nguyên dương thứ nhất"));
+        while (!Number.isInteger(a) || a < 0){
+            a = Number(prompt("Số nhập vào chưa hợp lệ,vui lòng nhập lại"))
+        }
+
+        var b = Number(prompt("Nhập vào số nguyên dương thứ hai"));
+        while (!Number.isInteger(b) ||  b < 0){
+            b = Number(prompt("Số nhập vào chưa hợp lệ,vui lòng nhập lại"))
+        }
+        for (var i = 0; i < a; i++){
+            if (i % b == 0){
+                document.write(i + "<br>")
+            }
+        }
+    </script>
+</body>
+</html>

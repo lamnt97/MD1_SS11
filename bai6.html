@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = Number(prompt("Nhập vào 1 số nguyên không âm"));
+        //Kiểm tra tính hợp lệ của số nhập vào,sai sẽ nhập lại
+        while (!Number.isInteger(n) || n < 0){
+            n = Number(prompt("Số nhập vào không hợp lệ,vui lòng nhập lại"))
+        };
+
+        var gt = 1
+        for ( var i = 1; i <= n; i++){
+            gt = gt * i
+        }
+        document.write(`${n}!= `+ gt);
+    </script>
+</body>
+</html>
